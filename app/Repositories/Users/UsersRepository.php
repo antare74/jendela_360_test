@@ -1,9 +1,10 @@
 <?php
-namespace App\Repositories\UserRepository;
+namespace App\Repositories\Users;
 
 use App\User;
 
-class UserRepository{
+class UsersRepository{
+
     public function findUserByEmail($email){
         return User::with([])->where('email', $email)->oldest()->first();
     }

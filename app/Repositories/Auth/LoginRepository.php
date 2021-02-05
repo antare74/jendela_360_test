@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Repositories\Auth;
-use App\Repositories\UserRepository\UserRepository;
+use App\Repositories\Users\UsersRepository;
 use Cartalyst\Sentinel\Laravel\Facades\Sentinel;
 
 class LoginRepository
@@ -9,7 +9,7 @@ class LoginRepository
 
     public function loginAuth($inputs = []){
         try {
-            $userRepository = new UserRepository();
+            $userRepository = new UsersRepository();
             /* check if email field exist */
             if (isset($inputs['email'])){
                 /* check if user available */

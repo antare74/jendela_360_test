@@ -6,9 +6,7 @@ use App\Http\Requests\Auth\CreateUserValidation;
 use App\Http\Requests\Auth\LoginAuth;
 use App\Repositories\Auth\LoginRepository;
 use App\Repositories\Auth\RegisterRepository;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Session;
 
 class AuthenticationController extends Controller
 {

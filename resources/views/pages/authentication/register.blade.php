@@ -23,7 +23,7 @@
             <!-- Table -->
             <div class="row justify-content-center">
                 <div class="col-lg-6 col-md-8">
-                    @include('layouts.includes.validation')
+                    @include('layouts.includes.session_and_validation')
                     <div class="card bg-secondary border-0">
                         <div class="card-body px-lg-5 py-lg-5">
                             <form role="form" method="post" action="{{ route('createUser') }}">
